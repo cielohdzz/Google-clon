@@ -1,0 +1,217 @@
+body{
+    /* margen predeterminado en las página web */
+    margin: 0;
+    /* Margen interior */
+    padding: 0;
+    /* Tamaño de fuente */
+    font-size: 15px;
+    /* Fuente */
+    font-family: Arial,sans-serif;
+}
+
+/* ************************************* */
+/* **************NAVEGACIÓN************ */
+header{
+   /* background-color: cornflowerblue;*/
+    width: 100%;
+    height: 50px;
+}
+header nav{
+    display: flex;
+    /* mover el nav hacia la derecha */
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    /* list-style-type: eliminar la viñetas*/
+    list-style-type: none;
+    width: 250px;
+    /* hacemos el elemento flexible */
+    display: flex; 
+    /* centramos */
+    justify-content: space-between;
+    /* centrado vertical */
+    align-items: center;
+    height: auto;
+}
+nav .nav-right-section a{
+    /* Quitar delineado//linea */
+    text-decoration: none;
+    /* color de texto */
+    color: black (0,0,0,.87);
+    
+}
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+nav .nav-right-section img{
+    /* Margen derecho */
+    margin-right: 20px;
+    /* tamaño de foto de perfil */
+    border-radius: 20px;
+
+}
+/* ************************************* */
+/* **************MAIN************ */
+
+main{
+    /* margen superior */
+    margin-top: 200px;
+    /* Centrar elementos */
+    text-align: center;
+}
+main .main-logo{
+    width: 500px;
+    /* Propiedad: Valor1:vertical - 
+    Valor2: Horizontal */
+    /* Central elemento */
+    margin: 0 auto;
+    /* Top/rigth/bottom/left */
+    /* Margin: 2px 1em 0 auto */
+    margin-bottom: 20px;
+}
+main .main-logo img{
+    /* Editar tamaño de la imagen */
+    height: 200px;
+}
+
+/* ************************************* */
+/* **************INPUT SECTION************ */
+main .main-input{
+    /* anchura */
+    width: 550px;
+    /* centrar elemento */
+    margin: 0 auto 35px;
+    /* agregar margen inferior */
+}
+main .main-input-container{
+    width: 550px;
+    /* Borde de color: Anchura, Estilo, Color */
+    border: 1px solid #6f7071;
+    border-radius: 26px;
+    
+}
+
+main .main-input input {
+    height: 40px;
+    border: none;
+    outline: none;
+    width: 430px;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    background-position: center;
+    padding-left: 6%;
+    /*   PARA QUE NO SE REPITA EL ÍCONO */
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 13px;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px  #66676c47;
+    border-color: #dfe1e500;
+}
+
+main .main-buttons{
+    width: 600;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /* alinear elementos en la misma línea */
+    display: inline;
+}
+
+main .main-buttons button{
+    /* separacion entre buscador y botones */
+    margin-top: 0px;
+    border: none;
+    height: 40px;
+    background-color: #f8f9fa;
+    /* color de texto */
+    color: #3c4043;
+    border-radius: 4px;
+    padding: 0 16px;
+    font-size: 14px;
+    margin: 11px 4px;
+    cursor: pointer;
+
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    /* borde oscuro al pasar el mouse */
+    border: 1px solid #dadce0;
+}
+/********************** footer section ***************/
+
+footer .mexico{
+/* ESTA SECCION SOLO ES LA CAJA QUE DICE MÉXICO */
+    padding: 15px 30px;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 15px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+footer .pie{
+    /* CAJA GRIS DE ABAJO */
+    padding: 0px 20px;
+    border-top: 1px solid #e4e4e4;
+    font-size: 15px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .footer-left{
+    list-style-type: none;
+    width: auto;
+    display: flex; 
+    justify-content: flex-start;
+    padding: 0px;
+}
+footer .footer-right{
+    list-style-type: none;
+    width: auto;
+   display: flex;
+    justify-content:flex-end;
+}
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
